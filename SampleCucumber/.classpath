@@ -8,5 +8,7 @@
 	<classpathentry kind="lib" path="lib/gherkin-2.12.2.jar"/>
 	<classpathentry kind="lib" path="lib/cucumber-testng-1.1.5.jar"/>
 	<classpathentry kind="lib" path="lib/cucumber-core-1.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber-junit-1.1.5.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.11.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
