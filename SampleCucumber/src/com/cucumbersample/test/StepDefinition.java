@@ -19,7 +19,7 @@ public class StepDefinition {
 
 	protected WebDriver driver;
 
-	@BeforeMethod
+	@Before
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "C:/Softwares/chromedriver_win32_2.2/chromedriver.exe");
 		driver = new ChromeDriver();
@@ -27,7 +27,7 @@ public class StepDefinition {
 		driver.manage().window().maximize();
 	}
 
-	@AfterMethod
+	@After
 	public void tearDown() {
 		driver.close();
 	}
