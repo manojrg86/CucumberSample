@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -17,7 +19,7 @@ public class StepDefinition {
 
 	protected WebDriver driver;
 
-	@Before
+	@BeforeMethod
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "C:/Softwares/chromedriver_win32_2.2/chromedriver.exe");
 		driver = new ChromeDriver();
@@ -25,7 +27,7 @@ public class StepDefinition {
 		driver.manage().window().maximize();
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() {
 		driver.close();
 	}
